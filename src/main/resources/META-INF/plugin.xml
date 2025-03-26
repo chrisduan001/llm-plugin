@@ -22,6 +22,17 @@
     <!-- Extension points defined by the plugin.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
     <extensions defaultExtensionNs="com.intellij">
+        <toolWindow id="LlmPlugin"
+                    anchor="right"
+                    factoryClass="com.cd.llmplugin.toolwindow.LlmToolWindowFactory"
+                    icon="/META-INF/pluginIcon.svg"
+                    canCloseContents="false" />
+
+        <editorFactoryListener implementation="com.cd.llmplugin.listener.LlmEditorListener" />
 
     </extensions>
+
+    <actions>
+        <action class=""
+    </actions>
 </idea-plugin>
